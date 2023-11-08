@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "tssh"
+version = "0.1.0"
+description = "Proxy command to better integrate Tailscale with SSH"
+authors = ["Dan Mills <dmills@qumulo.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+tssh = "tssh.cli:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
